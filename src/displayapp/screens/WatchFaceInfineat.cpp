@@ -223,7 +223,7 @@ WatchFaceInfineat::WatchFaceInfineat(Controllers::DateTime& dateTimeController,
   lv_obj_set_style_local_text_color(labelDate, LV_LABEL_PART_MAIN, LV_STATE_DEFAULT, grayColor);
   lv_obj_set_style_local_text_font(labelDate, LV_LABEL_PART_MAIN, LV_STATE_DEFAULT, font_teko);
   lv_obj_align(labelDate, dateContainer, LV_ALIGN_IN_TOP_MID, 0, 0);
-  lv_label_set_text_static(labelDate, "Mon 01");
+  lv_label_set_text_static(labelDate, "Lun 01");
 
   bleIcon = lv_label_create(lv_scr_act(), nullptr);
   lv_obj_set_style_local_text_color(bleIcon, LV_LABEL_PART_MAIN, LV_STATE_DEFAULT, grayColor);
@@ -277,7 +277,7 @@ WatchFaceInfineat::WatchFaceInfineat(Controllers::DateTime& dateTimeController,
   lv_obj_set_size(btnToggleCover, 60, 60);
   lv_obj_align(btnToggleCover, lv_scr_act(), LV_ALIGN_CENTER, 0, 80);
   lv_obj_set_style_local_bg_opa(btnToggleCover, LV_BTN_PART_MAIN, LV_STATE_DEFAULT, LV_OPA_70);
-  const char* labelToggle = settingsController.GetInfineatShowSideCover() ? "ON" : "OFF";
+  const char* labelToggle = settingsController.GetInfineatShowSideCover() ? "ENC" : "APA";
   lblToggle = lv_label_create(btnToggleCover, nullptr);
   lv_label_set_text_static(lblToggle, labelToggle);
   lv_obj_set_event_cb(btnToggleCover, event_handler);
@@ -365,7 +365,7 @@ void WatchFaceInfineat::UpdateSelected(lv_obj_t* object, lv_event_t event) {
       }
       lv_obj_set_hidden(btnNextColor, showSideCover);
       lv_obj_set_hidden(btnPrevColor, showSideCover);
-      const char* labelToggle = showSideCover ? "OFF" : "ON";
+      const char* labelToggle = showSideCover ? "APA" : "ENC";
       lv_label_set_text_static(lblToggle, labelToggle);
     }
     if (object == btnNextColor) {

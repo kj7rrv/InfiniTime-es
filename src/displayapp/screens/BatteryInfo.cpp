@@ -54,21 +54,21 @@ void BatteryInfo::Refresh() {
 
   if (batteryController.IsCharging()) {
     lv_obj_set_style_local_bg_color(charging_bar, LV_BAR_PART_INDIC, LV_STATE_DEFAULT, LV_COLOR_RED);
-    lv_label_set_text_static(status, "Charging");
+    lv_label_set_text_static(status, "Cargando");
   } else if (batteryPercent == 100) {
     lv_obj_set_style_local_bg_color(charging_bar, LV_BAR_PART_INDIC, LV_STATE_DEFAULT, LV_COLOR_BLUE);
-    lv_label_set_text_static(status, "Fully charged");
+    lv_label_set_text_static(status, "Cargado");
   } else if (batteryPercent < 10) {
     lv_obj_set_style_local_bg_color(charging_bar, LV_BAR_PART_INDIC, LV_STATE_DEFAULT, LV_COLOR_YELLOW);
-    lv_label_set_text_static(status, "Battery low");
+    lv_label_set_text_static(status, "Bateria baja");
   } else {
     lv_obj_set_style_local_bg_color(charging_bar, LV_BAR_PART_INDIC, LV_STATE_DEFAULT, Colors::highlight);
-    lv_label_set_text_static(status, "Discharging");
+    lv_label_set_text_static(status, "Descargando");
   }
 
   lv_label_set_text_fmt(percent, "%02i%%", batteryPercent);
 
   lv_obj_align(status, charging_bar, LV_ALIGN_OUT_BOTTOM_MID, 0, 20);
-  lv_label_set_text_fmt(voltage, "%1i.%02i volts", batteryVoltage / 1000, batteryVoltage % 1000 / 10);
+  lv_label_set_text_fmt(voltage, "%1i.%02i voltios", batteryVoltage / 1000, batteryVoltage % 1000 / 10);
   lv_bar_set_value(charging_bar, batteryPercent, LV_ANIM_ON);
 }

@@ -177,7 +177,7 @@ WatchFacePineTimeStyle::WatchFacePineTimeStyle(Controllers::DateTime& dateTimeCo
   // Display date
   dateDayOfWeek = lv_label_create(lv_scr_act(), nullptr);
   lv_obj_set_style_local_text_color(dateDayOfWeek, LV_LABEL_PART_MAIN, LV_STATE_DEFAULT, LV_COLOR_BLACK);
-  lv_label_set_text_static(dateDayOfWeek, "THU");
+  lv_label_set_text_static(dateDayOfWeek, "JUE");
   lv_obj_align(dateDayOfWeek, calendarOuter, LV_ALIGN_CENTER, 0, -32);
 
   dateDay = lv_label_create(lv_scr_act(), nullptr);
@@ -324,7 +324,7 @@ WatchFacePineTimeStyle::WatchFacePineTimeStyle(Controllers::DateTime& dateTimeCo
   lv_obj_align(btnReset, lv_scr_act(), LV_ALIGN_CENTER, 0, 80);
   lv_obj_set_style_local_bg_opa(btnReset, LV_BTN_PART_MAIN, LV_STATE_DEFAULT, LV_OPA_50);
   lv_obj_t* lblReset = lv_label_create(btnReset, nullptr);
-  lv_label_set_text_static(lblReset, "Rst");
+  lv_label_set_text_static(lblReset, "Rei");
   lv_obj_set_event_cb(btnReset, event_handler);
   lv_obj_set_hidden(btnReset, true);
 
@@ -334,7 +334,7 @@ WatchFacePineTimeStyle::WatchFacePineTimeStyle(Controllers::DateTime& dateTimeCo
   lv_obj_align(btnRandom, lv_scr_act(), LV_ALIGN_CENTER, 0, 0);
   lv_obj_set_style_local_bg_opa(btnRandom, LV_BTN_PART_MAIN, LV_STATE_DEFAULT, LV_OPA_50);
   lv_obj_t* lblRandom = lv_label_create(btnRandom, nullptr);
-  lv_label_set_text_static(lblRandom, "Rnd");
+  lv_label_set_text_static(lblRandom, "Ale");
   lv_obj_set_event_cb(btnRandom, event_handler);
   lv_obj_set_hidden(btnRandom, true);
 
@@ -354,7 +354,7 @@ WatchFacePineTimeStyle::WatchFacePineTimeStyle(Controllers::DateTime& dateTimeCo
   lv_obj_align(btnSteps, lv_scr_act(), LV_ALIGN_CENTER, 0, -10);
   lv_obj_set_style_local_bg_opa(btnSteps, LV_BTN_PART_MAIN, LV_STATE_DEFAULT, LV_OPA_50);
   lv_obj_t* lblSteps = lv_label_create(btnSteps, nullptr);
-  lv_label_set_text_static(lblSteps, "Steps style");
+  lv_label_set_text_static(lblSteps, "Estilo Pasos");
   lv_obj_set_event_cb(btnSteps, event_handler);
   lv_obj_set_hidden(btnSteps, true);
 
@@ -364,7 +364,7 @@ WatchFacePineTimeStyle::WatchFacePineTimeStyle(Controllers::DateTime& dateTimeCo
   lv_obj_align(btnWeather, lv_scr_act(), LV_ALIGN_CENTER, 0, 60);
   lv_obj_set_style_local_bg_opa(btnWeather, LV_BTN_PART_MAIN, LV_STATE_DEFAULT, LV_OPA_50);
   lv_obj_t* lblWeather = lv_label_create(btnWeather, nullptr);
-  lv_label_set_text_static(lblWeather, "Weather");
+  lv_label_set_text_static(lblWeather, "Tiempo");
   lv_obj_set_event_cb(btnWeather, event_handler);
   lv_obj_set_hidden(btnWeather, true);
 

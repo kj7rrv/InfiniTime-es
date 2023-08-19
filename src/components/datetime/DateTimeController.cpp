@@ -5,10 +5,10 @@
 using namespace Pinetime::Controllers;
 
 namespace {
-  char const* DaysStringShort[] = {"--", "MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"};
-  char const* DaysStringShortLow[] = {"--", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"};
-  char const* MonthsString[] = {"--", "JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"};
-  char const* MonthsStringLow[] = {"--", "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"};
+  char const* DaysStringShort[] = {"--", "LUN", "MAR", "MIE", "JUE", "VIE", "SAB", "DOM"};
+  char const* DaysStringShortLow[] = {"--", "Lun", "Mar", "Mie", "Jue", "Vie", "Sab", "Dom"};
+  char const* MonthsString[] = {"--", "ENE", "FEB", "MAR", "ABR", "MAY", "JUN", "JUL", "AGO", "SEP", "OCT", "NOV", "DIC"};
+  char const* MonthsStringLow[] = {"--", "Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"};
 }
 
 DateTime::DateTime(Controllers::Settings& settingsController) : settingsController {settingsController} {

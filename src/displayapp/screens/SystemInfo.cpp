@@ -275,11 +275,11 @@ std::unique_ptr<Screen> SystemInfo::CreateScreen5() {
   lv_obj_t* label = lv_label_create(lv_scr_act(), nullptr);
   lv_label_set_recolor(label, true);
   lv_label_set_text_static(label,
-                           "Software Licensed\n"
-                           "under the terms of\n"
-                           "the GNU General\n"
+                           "Programa Licenciado\n"
+                           "bajo los terminos\n"
+                           "de la GNU General\n"
                            "Public License v3\n"
-                           "#808080 Source code#\n"
+                           "#808080 Codigo fuente#\n"
                            "#FFFF00 https://github.com/#\n"
                            "#FFFF00 InfiniTimeOrg/#\n"
                            "#FFFF00 InfiniTime#");

@@ -143,29 +143,29 @@ static void passkey_display(uint16_t conn_handle)
 static void pairing_complete(uint16_t conn_handle, bool bonded)
 {
 	printk("Pairing Complete\n");
-	board_show_text("Pairing Complete", false, K_SECONDS(2));
+	board_show_text("Emparejado Hecho", false, K_SECONDS(2));
 }
 
 static void pairing_failed(uint16_t conn_handle)
 {
 	printk("Pairing Failed\n");
-	board_show_text("Pairing Failed", false, K_SECONDS(2));
+	board_show_text("Emparejado Fallo", false, K_SECONDS(2));
 }
 
 static void connected(uint16_t conn_handle, int err)
 {
-	printk("Connected (err 0x%02x)\n", err);
+	printk("Conectado (err 0x%02x)\n", err);
 
 	if (err) {
-		board_show_text("Connection failed", false, K_SECONDS(2));
+		board_show_text("Fallo al conectar", false, K_SECONDS(2));
 	} else {
-		board_show_text("Connected", false, K_FOREVER);
+		board_show_text("Conectado", false, K_FOREVER);
 	}
 }
 
 static void disconnected(uint16_t conn_handle, int reason)
 {
-	printk("Disconnected (reason 0x%02x)\n", reason);
+	printk("Desconectado (reason 0x%02x)\n", reason);
 
 	if (strcmp(MYNEWT_VAL(BLE_SVC_GAP_DEVICE_NAME), bt_get_name()) != 0 &&
 	    !mesh_is_initialized()) {
@@ -173,7 +173,7 @@ static void disconnected(uint16_t conn_handle, int reason)
 		ble_gap_adv_stop();
 		mesh_start();
 	} else {
-		board_show_text("Disconnected", false, K_SECONDS(2));
+		board_show_text("Desconectado", false, K_SECONDS(2));
 	}
 }
 
@@ -283,7 +283,7 @@ static void on_sync(void)
 	err = ble_hs_id_set_rnd(addr.val);
 	assert(err == 0);
 
-	printk("Bluetooth initialized\n");
+	printk("Bluetooth activado\n");
 
 	err = mesh_init(addr.type);
 	if (err) {

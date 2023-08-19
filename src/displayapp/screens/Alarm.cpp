@@ -252,13 +252,13 @@ void Alarm::ShowInfo() {
     auto secToAlarm = timeToAlarm % 60;
 
     lv_label_set_text_fmt(txtMessage,
-                          "Time to\nalarm:\n%2lu Days\n%2lu Hours\n%2lu Minutes\n%2lu Seconds",
+                          "Tiempo hasta\nalarma:\n%2lu Dias\n%2lu Horas\n%2lu Minutos\n%2lu Segundos",
                           daysToAlarm,
                           hrsToAlarm,
                           minToAlarm,
                           secToAlarm);
   } else {
-    lv_label_set_text_static(txtMessage, "Alarm\nis not\nset.");
+    lv_label_set_text_static(txtMessage, "La alarma\nno esta\najustada.");
   }
 }
 
@@ -272,13 +272,13 @@ void Alarm::SetRecurButtonState() {
   using Pinetime::Controllers::AlarmController;
   switch (alarmController.Recurrence()) {
     case AlarmController::RecurType::None:
-      lv_label_set_text_static(txtRecur, "ONCE");
+      lv_label_set_text_static(txtRecur, "UNA VEZ");
       break;
     case AlarmController::RecurType::Daily:
-      lv_label_set_text_static(txtRecur, "DAILY");
+      lv_label_set_text_static(txtRecur, "DIARIO");
       break;
     case AlarmController::RecurType::Weekdays:
-      lv_label_set_text_static(txtRecur, "MON-FRI");
+      lv_label_set_text_static(txtRecur, "LUN-VIER");
   }
 }
 

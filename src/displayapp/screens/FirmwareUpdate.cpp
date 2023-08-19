@@ -8,7 +8,7 @@ using namespace Pinetime::Applications::Screens;
 FirmwareUpdate::FirmwareUpdate(const Pinetime::Controllers::Ble& bleController) : bleController {bleController} {
 
   titleLabel = lv_label_create(lv_scr_act(), nullptr);
-  lv_label_set_text_static(titleLabel, "Firmware update");
+  lv_label_set_text_static(titleLabel, "Actua. Firmware");
   lv_obj_align(titleLabel, nullptr, LV_ALIGN_IN_TOP_MID, 0, 50);
 
   bar1 = lv_bar_create(lv_scr_act(), nullptr);

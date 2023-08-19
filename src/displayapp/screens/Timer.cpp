@@ -86,7 +86,7 @@ void Timer::MaskReset() {
   // A click event is processed before a release event,
   // so the release event would override the "Pause" text without this check
   if (!timer.IsRunning()) {
-    lv_label_set_text_static(txtPlayPause, "Start");
+    lv_label_set_text_static(txtPlayPause, "Listo");
   }
   maskPosition = 0;
   UpdateMask();
@@ -108,7 +108,7 @@ void Timer::Refresh() {
     minuteCounter.SetValue(secondsRemaining.count() / 60);
     secondCounter.SetValue(secondsRemaining.count() % 60);
   } else if (buttonPressing && xTaskGetTickCount() > pressTime + pdMS_TO_TICKS(150)) {
-    lv_label_set_text_static(txtPlayPause, "Reset");
+    lv_label_set_text_static(txtPlayPause, "Reinici");
     maskPosition += 15;
     if (maskPosition > 240) {
       MaskReset();
@@ -122,13 +122,13 @@ void Timer::Refresh() {
 void Timer::SetTimerRunning() {
   minuteCounter.HideControls();
   secondCounter.HideControls();
-  lv_label_set_text_static(txtPlayPause, "Pause");
+  lv_label_set_text_static(txtPlayPause, "Pausa");
 }
 
 void Timer::SetTimerStopped() {
   minuteCounter.ShowControls();
   secondCounter.ShowControls();
-  lv_label_set_text_static(txtPlayPause, "Start");
+  lv_label_set_text_static(txtPlayPause, "Listo");
 }
 
 void Timer::ToggleRunning() {

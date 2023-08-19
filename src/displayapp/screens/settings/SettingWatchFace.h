@@ -32,7 +32,7 @@ namespace Pinetime {
         Controllers::Settings& settingsController;
         Pinetime::Controllers::FS& filesystem;
 
-        static constexpr const char* title = "Watch face";
+        static constexpr const char* title = "Tema Reloj";
         static constexpr const char* symbol = Symbols::home;
 
         static constexpr int settingsPerScreen = 4;
@@ -41,11 +41,11 @@ namespace Pinetime {
         static constexpr int nScreens = 2;
 
         std::array<Screens::CheckboxList::Item, settingsPerScreen * nScreens> watchfaces {
-          {{"Digital face", true},
-           {"Analog face", true},
+          {{"Tema Digital", true},
+           {"Tema Analogic", true},
            {"PineTimeStyle", true},
            {"Terminal", true},
-           {"Infineat face", Applications::Screens::WatchFaceInfineat::IsAvailable(filesystem)},
+           {"Tema Infineat", Applications::Screens::WatchFaceInfineat::IsAvailable(filesystem)},
            {"Casio G7710", Applications::Screens::WatchFaceCasioStyleG7710::IsAvailable(filesystem)},
            {"", false},
            {"", false}}};
