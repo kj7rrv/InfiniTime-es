@@ -1,37 +1,39 @@
-# [InfiniTime](https://github.com/InfiniTimeOrg/InfiniTime)
+# [InfiniTime-es](https://github.com/InfiniTimeOrg/InfiniTime)
 
 ![InfiniTime logo](doc/logo/infinitime-logo-small.jpg "InfiniTime Logo")
 
-Fast open-source firmware for the [PineTime smartwatch](https://www.pine64.org/pinetime/) with many features, written in modern C++.
+Firmware rápido de código abierto para el reloj inteligente [PineTime](https://www.pine64.org/pinetime/) con muchas funciones, escrito en C++ moderno.
 
-## New to InfiniTime?
+La interfaz de usuario de esta versión está traducida al español.
 
-- [Getting started with InfiniTime](doc/gettingStarted/gettingStarted-1.0.md)
-- [Updating the software](doc/gettingStarted/updating-software.md)
-- [About the firmware and bootloader](doc/gettingStarted/about-software.md)
-- [PineTimeStyle Watch face](https://wiki.pine64.org/wiki/PineTimeStyle)
-  - [Weather integration](https://wiki.pine64.org/wiki/Infinitime-Weather)
+## ¿Nuevo a InfiniTime?
 
-### Companion apps
+- [Primeros pasos con InfiniTime](doc/gettingStarted/gettingStarted-1.0.md)
+- [Actualizar el software](doc/gettingStarted/updating-software.md)
+- [Sobre el firmware y el gestor de arranque](doc/gettingStarted/about-software.md)
+- [PineTimeStyle cara del reloj](https://wiki.pine64.org/wiki/PineTimeStyle) (en ingl
+  - [Información del tiempo](https://wiki.pine64.org/wiki/Infinitime-Weather)
+
+### Aplicaciones complementaria
 
 - [Gadgetbridge](https://gadgetbridge.org/) (Android)
 - [AmazFish](https://openrepos.net/content/piggz/amazfish/) (SailfishOS)
 - [Siglo](https://github.com/alexr4535/siglo) (Linux)
-- [InfiniLink](https://github.com/InfiniTimeOrg/InfiniLink) (iOS) **[Looking for a new maintainer]**
+- [InfiniLink](https://github.com/InfiniTimeOrg/InfiniLink) (iOS) **[Buscando un nuevo mantenedor]**
 - [ITD](https://gitea.elara.ws/Elara6331/itd) (Linux)
 - [WatchMate](https://github.com/azymohliad/watchmate) (Linux)
 
-***Note** : We removed mentions to NRFConnect as this app is closed source and recent versions do not work anymore with InfiniTime (the last version known to work is 4.24.3). If you used NRFConnect in the past, we recommend you switch to [Gadgetbridge](https://gadgetbridge.org/).*
+***Nota** : Eliminamos las referencias a NRFConnect as this app is closed source and recent versions do not work anymore with InfiniTime (the last version known to work is 4.24.3). porque es de código cerrado y las versiones recientes ya no funcionan con InfiniTime (la última versión conocida que funciona es 4.24.3). Si utilizó NRFConnect en el pasado, le recomendamos que cambie a [Gadgetbridge](https://gadgetbridge.org/).*
 
-## Development
+## Desarrolo
 
-- [InfiniTime Vision](doc/InfiniTimeVision.md)
-- [Rough structure of the code](doc/code/Intro.md)
-- [How to implement an application](doc/code/Apps.md)
-- [Generate the fonts and symbols](src/displayapp/fonts/README.md)
-- [Tips on designing an app UI](doc/ui_guidelines.md)
-- [Bootloader, OTA and DFU](bootloader/README.md)
-- [External resources](doc/ExternalResources.md)
+- [Visión de InfiniTime](doc/InfiniTimeVision.md)
+- [Estructura aproximada del código](doc/code/Intro.md)
+- [Cómo escribir una aplicación](doc/code/Apps.md)
+- [Cómo generar las fuentes y los símbolos](src/displayapp/fonts/README.md)
+- [Sugerencias para diseñar la IU de una aplicación](doc/ui_guidelines.md)
+- [Gestor de arranque, OTA y DFU](bootloader/README.md)
+- [Recursos externos](doc/ExternalResources.md)
 
 ### Contributing
 
