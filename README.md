@@ -23,7 +23,7 @@ La interfaz de usuario de esta versión está traducida al español.
 - [ITD](https://gitea.elara.ws/Elara6331/itd) (Linux)
 - [WatchMate](https://github.com/azymohliad/watchmate) (Linux)
 
-***Nota** : Eliminamos las referencias a NRFConnect as this app is closed source and recent versions do not work anymore with InfiniTime (the last version known to work is 4.24.3). porque es de código cerrado y las versiones recientes ya no funcionan con InfiniTime (la última versión conocida que funciona es 4.24.3). Si utilizó NRFConnect en el pasado, le recomendamos que cambie a [Gadgetbridge](https://gadgetbridge.org/).*
+***Nota** : Eliminamos las referencias a NRFConnect porque es de código cerrado y las versiones recientes ya no funcionan con InfiniTime (la última versión conocida que funciona es 4.24.3). Si utilizó NRFConnect en el pasado, le recomendamos que cambie a [Gadgetbridge](https://gadgetbridge.org/).*
 
 ## Desarrolo
 
