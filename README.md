@@ -35,26 +35,26 @@ La interfaz de usuario de esta versión está traducida al español.
 - [Gestor de arranque, OTA y DFU](bootloader/README.md)
 - [Recursos externos](doc/ExternalResources.md)
 
-### Contributing
+### Contribuir
 
-- [How to contribute?](CONTRIBUTING.md)
-- [Coding conventions](doc/coding-convention.md)
+- [Cómo contribuir](CONTRIBUTING.md)
+- [Convención de codificación](doc/coding-convention.md)
 
-### Build, flash and debug
+### Compilar, flashear y depurar
 
-- [InfiniTime simulator](https://github.com/InfiniTimeOrg/InfiniSim)
-- [Build the project](doc/buildAndProgram.md)
-- [Build the project with Docker](doc/buildWithDocker.md)
-- [Build the project with VSCode](doc/buildWithVScode.md)
-- [Flash the firmware using OpenOCD and STLinkV2](doc/openOCD.md)
-- [Flash the firmware using SWD interface](doc/SWD.md)
-- [Flash the firmware using JLink](doc/jlink.md)
-- [Flash the firmware using GDB](doc/gdb.md)
-- [Stub using NRF52-DK](doc/PinetimeStubWithNrf52DK.md)
+- [Simulador de InfiniTime](https://github.com/InfiniTimeOrg/InfiniSim)
+- [Compilar el proyecto](doc/buildAndProgram.md)
+- [Compilar el proyecto con Docker](doc/buildWithDocker.md)
+- [Compilar el proyecto con VSCode](doc/buildWithVScode.md)
+- [Flashear el firmware con OpenOCD STLinkV2](doc/openOCD.md)
+- [Flashear el firmware con la interfaz SWD](doc/SWD.md)
+- [Flashear el firmware con JLink](doc/jlink.md)
+- [Flashear el firmware con GDB](doc/gdb.md)
+- [Stub con NRF52-DK](doc/PinetimeStubWithNrf52DK.md)
 
 ### API
 
-- [BLE implementation and API](doc/ble.md)
+- [Implementación y API de BLE](doc/ble.md)
 
 ### Architecture and technical topics
 
