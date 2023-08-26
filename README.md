@@ -56,30 +56,32 @@ La interfaz de usuario de esta versión está traducida al español.
 
 - [Implementación y API de BLE](doc/ble.md)
 
-### Architecture and technical topics
+### Arquitectura y temas técnicos
 
-- [Memory analysis](doc/MemoryAnalysis.md)
+- [Análisis de memoria](doc/MemoryAnalysis.md)
 
-### Project management
+### Gestión de proyecto
 
-- [Maintainer's guide](doc/maintainer-guide.md)
-- [Versioning](doc/versioning.md)
-- [Project branches](doc/branches.md)
-- [Files included in the release notes](doc/filesInReleaseNotes.md)
-- [Files needed by the factory](doc/files-needed-by-factory.md)
+- [Guía del mantenedor](doc/maintainer-guide.md)
+- [Versionando](doc/versioning.md)
+- [Ramas del proyecto](doc/branches.md)
+- [Archivos incluidos en las notas de la versión](doc/filesInReleaseNotes.md)
+- [Archivos necesarios para la fábrica](doc/files-needed-by-factory.md)
 
-## Licenses
+## Licencias
 
-This project is released under the GNU General Public License version 3 or, at your option, any later version.
+Este proyecto se publica bajo la GNU General Public License (Licencia Pública General) versión 3 o, a su elección, cualquier versión posterior.
 
-It integrates the following projects:
+Integra los siguientes proyectos:
 
-- RTOS : **[FreeRTOS](https://freertos.org)** under the MIT license
-- UI : **[LittleVGL/LVGL](https://lvgl.io/)** under the MIT license
-- BLE stack : **[NimBLE](https://github.com/apache/mynewt-nimble)** under the Apache 2.0 license
-- Font : **[Jetbrains Mono](https://www.jetbrains.com/fr-fr/lp/mono/)** under the Apache 2.0 license
+- RTOS : **[FreeRTOS](https://freertos.org)** bajo la licencia MIT
+- UI : **[LittleVGL/LVGL](https://lvgl.io/)** bajo la licencia MIT
+- Pila BLE : **[NimBLE](https://github.com/apache/mynewt-nimble)** bajo la licencia Apache 2.0
+- Fuente : **[Jetbrains Mono](https://www.jetbrains.com/fr-fr/lp/mono/)** bajo la licencia Apache 2.0
 
-## Credits
+## Créditos
+
+(en inglés; del desarrollador original de InfiniTime)
 
 I’m not working alone on this project. First, many people create PR for this project. Then, there is the whole #pinetime community : a lot of people all around the world who are hacking, searching, experimenting and programming the Pinetime. We exchange our ideas, experiments and code in the chat rooms and forums.
 
