@@ -14,7 +14,7 @@ La interfaz de usuario de esta versión está traducida al español.
 - [PineTimeStyle cara del reloj](https://wiki.pine64.org/wiki/PineTimeStyle) (en ingl
   - [Información del tiempo](https://wiki.pine64.org/wiki/Infinitime-Weather)
 
-### Aplicaciones complementaria
+### Aplicaciones complementarias
 
 - [Gadgetbridge](https://gadgetbridge.org/) (Android)
 - [AmazFish](https://openrepos.net/content/piggz/amazfish/) (SailfishOS)
